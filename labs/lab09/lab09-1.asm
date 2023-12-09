@@ -28,16 +28,16 @@ call quit
 ; Подпрограмма вычисления
 ; выражения "2x+7"
 _calcul:
-call _subcalcul ; Вызов подпрограммы _subcalcul
+call _subcalcul ;Вызод  подпрограммы _subcalcul
 mov ebx,2
 mul ebx
 add eax,7
 mov [res],eax
-ret ; выход из подпрограммы
+ret ;Выход из подпрограммы
 
 _subcalcul:
-mov ebx, 3
+mov ebx,3
 mul ebx
-sub eax, 1
-mov [res], eax
-ret
+sub eax,1
+mov [res],eax
+ret ; выход из подпрограммы
